@@ -1,13 +1,14 @@
 import React from 'react'
 
 const Photo = (props) => {
-    console.log(props)
     return (
         <>
-        <img 
-        src = {props.photo.url} 
-        alt = {props.photo.title}
-        />
+        <div className='photoHolder'>
+            <img 
+            src = {props.photo} 
+            alt = {props.title}
+            />
+        </div>
         </>
     )
 }

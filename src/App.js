@@ -1,6 +1,8 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react"
 import axios from 'axios'
-import "./App.css";
+import "./App.css"
+import Photo from './components/Photo.js'
+import NavBar from './components/navBar.js'
 
 function App() {
 
@@ -18,11 +20,14 @@ function App() {
 
   return (
     <div className="App">
-     <>
-     <div className='photoHolder'>
-       <img src = {photo.url} alt={photo.title}/>
-     </div>
-     </>
+      <NavBar 
+       title = {photo.title}
+       />
+      <Photo 
+      photo = {photo.url}
+      title = {photo.title}
+      />
+     
     </div>
   );
 }
