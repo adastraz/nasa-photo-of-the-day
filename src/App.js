@@ -8,13 +8,23 @@ function App() {
 
   const [photo, setPhoto] = useState("")
   useEffect(() => {
-    axios.get('https://api.nasa.gov/planetary/apod?api_key=34a6Fg3WFnhFpRJNICb3XfUx77gYHBXUO0hy9f2A&date=2018-03-28')
+    axios.get('https://api.nasa.gov/planetary/apod?api_key=34a6Fg3WFnhFpRJNICb3XfUx77gYHBXUO0hy9f2A&date=1999-03-28')
       .then(response => {
         console.log(response.data.url)
         setPhoto(response.data)
       })
       .catch(err => {
         console.log(err)
+        setPhoto({
+          copyright:'none',
+          date:'',
+          explanation: 'You have selected an invalid state. Try again',
+          hdurl: 'https://images.unsplash.com/photo-1532003885409-ed84d334f6cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+          media_type: 'image',
+          service_version:'yes',
+          title:'error 404 Photo not found',
+          url:'https://images.unsplash.com/photo-1532003885409-ed84d334f6cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+        })
       })
   },[])
 
