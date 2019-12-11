@@ -19,11 +19,11 @@ function App() {
           copyright:'none',
           date:'',
           explanation: 'You have selected an invalid state. Try again',
-          hdurl: 'https://images.unsplash.com/photo-1532003885409-ed84d334f6cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+          hdurl: 'https://images.unsplash.com/photo-1532003885409-ed84d334f6cc',
           media_type: 'image',
           service_version:'yes',
           title:'error 404 Photo not found',
-          url:'https://images.unsplash.com/photo-1532003885409-ed84d334f6cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+          url:'https://images.unsplash.com/photo-1532003885409-ed84d334f6cc'
         })
       })
   },[])

@@ -13,7 +13,6 @@
 }
 .photoHolder{
   width:100%;
-  background: skyblue;
   display:flex;
   align-items:center;
   margin-top:1rem;
@@ -21,4 +20,14 @@
 }
 img{
   width:100%;
+  border-radius:3rem
+}
+
+nav {
+  display:flex;
+  justify-content: space-evenly;
+  align-content:center;
+  width:100;
+  height:3rem;
+  margin-top:2rem
 }
