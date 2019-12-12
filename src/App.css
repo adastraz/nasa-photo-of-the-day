@@ -4,27 +4,27 @@
   width:100%;
   background:powderblue;
 }
-.App{
+/* .App{
   display:flex;
   align-items:center;
   flex-direction:column;
   justify-content:center;
   max-width:900px;
   width:100%;
-}
-.photoHolder{
+} */
+/* .photoHolder{
   width:100%;
   display:flex;
   align-items:center;
   margin-top:1rem;
   justify-content:center;
-}
+} */
 img{
   width:100%;
   border-radius:3rem
 }
 
-nav {
+/* nav {
   display:flex;
   justify-content: space-evenly;
   align-content:center;
@@ -32,8 +32,8 @@ nav {
   height:3rem;
   margin-top:2rem;
   flex-direction:column
-}
-.content{
+} */
+/* .content{
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -44,22 +44,22 @@ nav {
   margin-bottom:3rem;
   border-radius:3rem;
   padding: 0 5rem;
-}
-h1{
+} */
+/* h1{
   text-align: center;
   margin-top: 2rem;
   margin-bottom:1rem;
-}
-h2{
+} */
+/* h2{
   margin-bottom:3rem;
-}
-.date{
+} */
+/* .date{
   text-align:center;
-}
-.buttonExtra{
+} */
+/* .buttonExtra{
   display:flex;
   justify-content:space-around;
   margin-top:1rem;
   margin-bottom:1rem;
   width: 100%;
-}
+} */

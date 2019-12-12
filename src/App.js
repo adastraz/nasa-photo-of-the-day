@@ -4,7 +4,16 @@ import "./App.css"
 import Photo from './components/Photo.js'
 import NavBar from './components/navBar.js'
 import ContentBox from './components/content.js'
+import styled from 'styled-components'
 
+const AppStyle = styled.div`
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  justify-content:center;
+  max-width:900px;
+  width:100%;
+`
 function App() {
 
   const [photo, setPhoto] = useState("")
@@ -64,7 +73,7 @@ function App() {
   },[date, year, month])
 
   return (
-    <div className="App">
+    <AppStyle>
       <NavBar 
        title = {photo.title}
        date = {photo.date}
@@ -83,7 +92,7 @@ function App() {
      <ContentBox
       explanation = {photo.explanation}
      />
-    </div>
+    </AppStyle>
   );
 }
 
